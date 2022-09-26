@@ -17,13 +17,31 @@ This pattern is useful in the following scenarios:
 
 - When a struct (class) can't anticipate which struct should be created. E.g: Payment service: CardPayment, CashPayment
 
-### Steps to implement a factory
+## Singleton pattern
 
-Let me take as an example the use-case of Payment service, where all the available payment methods must perform the same operations, but differently. The operations are the following:
-- `Pay(amount float64)`
-- ``
+This pattern restricts the creation (instantiation) of a struct (class) to a single instance.
 
-1 - Define an interface (Payment) which has to be implemented by
+In Go, a singleton can be thread-safe if sensitive blocks are wrapped under `once.Do(func(){})` from the `sync` package.
+
+```go
+package main
+
+import ("sync")
+
+type SomeService struct {}
+
+var once sync.Once
+var connectionToSomething *SomeService
+
+func GetInstanceOfSomething() *SomeService {
+    once.Do(func() {
+        // Run whatever shouldn't run twice here
+        connectionToSomething = &SomeService{}
+    })
+    
+    return connectionToSomething
+} 
+```
 
 ### References
 
