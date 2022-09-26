@@ -1,4 +1,4 @@
-package factory
+package publication
 
 type IPublication interface {
 	setName(name string)

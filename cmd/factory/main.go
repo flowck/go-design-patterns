@@ -2,23 +2,37 @@ package main
 
 import (
 	"fmt"
-	"go-design-patterns/creational/factory"
+	"go-design-patterns/creational/factory/payment"
+	"go-design-patterns/creational/factory/publication"
 	"log"
 )
 
 func main() {
 	var err error
-	var mag factory.IPublication
-	var pub factory.IPublication
+	var mag publication.IPublication
+	var pub publication.IPublication
+	var cashPayment payment.Payment
+	var cardPayment payment.Payment
 
-	if mag, err = factory.NewPublication(factory.PublicationMagazine, "Vogue", 20, "Vogue Inc"); err != nil {
+	if mag, err = publication.NewPublication(publication.Magazine, "Vogue", 20, "Vogue Inc"); err != nil {
 		log.Fatal(err)
 	}
 
-	if pub, err = factory.NewPublication(factory.PublicationNewspaper, "NY Times", 12, "New York Times Inc"); err != nil {
+	if pub, err = publication.NewPublication(publication.Newspaper, "NY Times", 12, "New York Times Inc"); err != nil {
 		log.Fatal(err)
 	}
 
 	fmt.Println("Magazine", mag)
 	fmt.Println("Newspaper", pub)
+
+	if cashPayment, err = payment.NewPaymentFactory("cash"); err != nil {
+		log.Fatal(err)
+	}
+
+	if cardPayment, err = payment.NewPaymentFactory("card"); err != nil {
+		log.Fatal(err)
+	}
+
+	cashPayment.Pay(100)
+	cardPayment.Pay(20)
 }

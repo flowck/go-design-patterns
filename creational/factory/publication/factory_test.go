@@ -1,4 +1,4 @@
-package factory
+package publication
 
 import (
 	"fmt"
@@ -7,12 +7,12 @@ import (
 )
 
 func TestNewPublication(t *testing.T) {
-	mag, err := NewPublication(PublicationMagazine, "Vogue", 10, "Vogue")
+	mag, err := NewPublication(Magazine, "Vogue", 10, "Vogue")
 
 	assert.Nil(t, err)
 	assert.Equal(t, fmt.Sprintf("%s", mag), "This is a magazine named Vogue")
 
-	pub, err := NewPublication(PublicationNewspaper, "NY Times", 10, "NY Times")
+	pub, err := NewPublication(Newspaper, "NY Times", 10, "NY Times")
 
 	assert.Nil(t, err)
 	assert.Equal(t, fmt.Sprintf("%s", pub), "This is a newspaper named NY Times")

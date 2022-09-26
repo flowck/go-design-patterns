@@ -13,7 +13,17 @@ can be in a valid state with all or just some attributes.
 The Factory pattern enables the abstraction of concrete structs (classes) through a factory method responsible to 
 create the right struct given the input it receives. 
 
-A common example would be a factory method responsible to choose and return a payment method struct.
+This pattern is useful in the following scenarios:
+
+- When a struct (class) can't anticipate which struct should be created. E.g: Payment service: CardPayment, CashPayment
+
+### Steps to implement a factory
+
+Let me take as an example the use-case of Payment service, where all the available payment methods must perform the same operations, but differently. The operations are the following:
+- `Pay(amount float64)`
+- ``
+
+1 - Define an interface (Payment) which has to be implemented by
 
 ### References
 
