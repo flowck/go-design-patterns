@@ -12,3 +12,6 @@ Link: [linkedin.com/learning/go-design-patterns](https://www.linkedin.com/learni
 - [Factory](./patterns/creational/factory)
 - [Singleton](./patterns/creational/singleton)
 
+### Structural
+
+- [Adapter](./patterns/structural/adapter)
