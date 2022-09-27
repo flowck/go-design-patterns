@@ -1,6 +1,6 @@
 package main
 
-import "go-design-patterns/structural/adapter/television"
+import "go-design-patterns/patterns/structural/adapter/television"
 
 func main() {
 	tv1 := &television.Samsung{CurrentChan: 13, CurrentVolume: 35, TvOn: true}

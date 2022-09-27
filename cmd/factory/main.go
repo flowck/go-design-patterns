@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"go-design-patterns/creational/factory/payment"
-	"go-design-patterns/creational/factory/publication"
+	"go-design-patterns/patterns/creational/factory/payment"
+	"go-design-patterns/patterns/creational/factory/publication"
 	"log"
 )
 

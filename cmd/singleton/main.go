@@ -1,8 +1,8 @@
 package main
 
 import (
-	"go-design-patterns/creational/singleton/database"
-	myLogger "go-design-patterns/creational/singleton/my-logger"
+	"go-design-patterns/patterns/creational/singleton/database"
+	myLogger "go-design-patterns/patterns/creational/singleton/my-logger"
 	"log"
 	"os"
 	"time"
