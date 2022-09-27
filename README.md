@@ -8,7 +8,7 @@ Link: [linkedin.com/learning/go-design-patterns](https://www.linkedin.com/learni
 
 ### Creational
 
-- [Builder](./creational/builder)
-- Factory
-- Singleton
+- [Builder](./patterns/creational/builder)
+- [Factory](./patterns/creational/factory)
+- [Singleton](./patterns/creational/singleton)
 
