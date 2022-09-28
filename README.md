@@ -15,3 +15,4 @@ Link: [linkedin.com/learning/go-design-patterns](https://www.linkedin.com/learni
 ### Structural
 
 - [Adapter](./patterns/structural/adapter)
+- [Façade](./patterns/structural/facade)
