@@ -16,3 +16,7 @@ Link: [linkedin.com/learning/go-design-patterns](https://www.linkedin.com/learni
 
 - [Adapter](./patterns/structural/adapter)
 - [Façade](./patterns/structural/facade)
+
+## Exercises
+
+A compilation of [exercises](./notes/exercises) to help me practice Design Patterns.
