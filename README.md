@@ -20,6 +20,7 @@ Link: [linkedin.com/learning/go-design-patterns](https://www.linkedin.com/learni
 ### Behavioral
 
 - [Observer](./patterns/behavioral/observer)
+- [Iterator](./patterns/behavioral/iterator)
 
 ## Exercises
 

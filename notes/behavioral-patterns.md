@@ -10,3 +10,19 @@ The Observer patterns allows one or many structs (class) to subscribe for data c
 * The observable must maintain a reference to the observers;
 * Observers must be able to unregister themselves at any point in the runtime;
 
+
+## The Iterator Pattern
+
+This pattern abstracts the logic needed to access a collection of elements in a struct (object).
+
+## What strategies can be used to implement The Iterator Pattern?
+
+- Callback (push model)
+- Interface that exposes two methods: `hasNext()` `getNext()` (pull model)
+
+## Callback implementation
+
+- Ideally the callback function should return an `error` to allow the struct (object) to handle any potential error thrown inside it (callback).
+
+## 
+
